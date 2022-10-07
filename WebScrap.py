@@ -16,7 +16,14 @@ with open('../Main.html', 'r') as html_file:
   for courses in course_tags:
     print(course.text)
 
-  # 
+  # grabbing the info - course name and price
   course_cards = soup.find_all(div, class_='card')
   for cards in course_cards:
-    print(cards)
+    #print(cards)
+    course_name = course.h5.text
+    course_price = course.a.text.split()[-1]
+    
+    print(course_name)
+    print(course_price)
+    print(f'{course_name} costs {course_price}')
+    
