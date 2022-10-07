@@ -1,3 +1,10 @@
+***
+
+Scrapping a HTML file stored at local machine
+'../Main.html'
+
+***
+
 # importing beautifulsoup library
 from bs4 import BeautifulSoup
 
